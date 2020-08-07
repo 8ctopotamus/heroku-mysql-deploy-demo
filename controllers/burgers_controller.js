@@ -1,24 +1,6 @@
 const express = require('express')
-// const burgerFile = require('./../models/burger.js')
-
-
-const app = express()
-const PORT = process.env.PORT || 3000
-
-app.use(express.static('public'))
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
 var router = express.Router();
 
-
-
-
-// var express = require("express");
-
-// var router = express.Router();
-
-// Import the model (burger.js) to use its database functions.
 var burger = require("./../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
